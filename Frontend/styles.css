@@ -1,0 +1,70 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Headers */
+.card-header h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+/* Card Styling for Book Items */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.edit-fields {
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+/* Customize the edit and delete buttons to match the card style */
+.book-actions button {
+    width: 45%;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.875rem;
+    }
+
+    .book-actions button {
+        width: 48%;
+    }
+}
